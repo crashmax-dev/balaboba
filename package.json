@@ -1,0 +1,28 @@
+{
+  "name": "balaboba",
+  "version": "0.0.1",
+  "description": "Balaboba API wrapper",
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "microbundle"
+  },
+  "devDependencies": {
+    "@crashmax/prettier-config": "^2.1.0",
+    "@crashmax/tsconfig": "^1.0.2",
+    "@types/node": "^18.11.9",
+    "microbundle": "^0.15.1",
+    "tsx": "^3.11.0"
+  },
+  "dependencies": {
+    "phin": "^3.6.1"
+  }
+}
